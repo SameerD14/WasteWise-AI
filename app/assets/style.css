@@ -1,0 +1,377 @@
+/* =========================================
+   WASTEWISE AI - DARK DESIGN SYSTEM
+========================================= */
+
+:root {
+    --ww-bg: #101820;
+    --ww-panel: #192630;
+    --ww-panel-hover: #223440;
+    --ww-sidebar: #111D27;
+    --ww-green: #16A879;
+    --ww-green-light: #35C99A;
+    --ww-text: #F1F5F7;
+    --ww-muted: #A6B5BF;
+    --ww-border: #30414D;
+    --ww-amber: #F2B84B;
+    --ww-red: #EF6B68;
+}
+
+.stApp {
+    background: var(--ww-bg) !important;
+    color: var(--ww-text) !important;
+}
+
+html, body, [class*="css"] {
+    font-family: Inter, Arial, sans-serif;
+}
+
+.block-container {
+    max-width: 1550px;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* GLOBAL TEXT */
+
+h1, h2, h3, h4, h5, p, label,
+[data-testid="stMarkdownContainer"] {
+    color: var(--ww-text) !important;
+}
+
+[data-testid="stCaptionContainer"] p {
+    color: var(--ww-muted) !important;
+}
+
+/* SIDEBAR */
+
+section[data-testid="stSidebar"] {
+    background: var(--ww-sidebar) !important;
+    border-right: 1px solid var(--ww-border);
+}
+
+section[data-testid="stSidebar"] * {
+    color: var(--ww-text) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    background: transparent;
+    border-radius: 9px;
+    padding: 8px 10px;
+}
+
+section[data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
+    background: var(--ww-panel-hover);
+}
+
+/* PAGE HEADER */
+
+.ww-page-header {
+    background: var(--ww-panel);
+    border: 1px solid var(--ww-border);
+    border-left: 4px solid var(--ww-green);
+    border-radius: 13px;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+}
+
+.ww-page-header h1 {
+    color: var(--ww-text) !important;
+    font-size: 29px;
+    margin: 0;
+}
+
+.ww-page-header p {
+    color: var(--ww-muted) !important;
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+/* SECTION HEADERS */
+
+.ww-section-header {
+    margin: 20px 0;
+}
+
+.ww-section-header h3 {
+    color: var(--ww-text) !important;
+}
+
+.ww-section-description {
+    color: var(--ww-muted) !important;
+}
+
+/* KPI CARDS */
+
+.ww-kpi-card {
+    background: var(--ww-panel) !important;
+    border: 1px solid var(--ww-border);
+    border-radius: 13px;
+    padding: 20px;
+    min-height: 115px;
+    margin-bottom: 12px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.12);
+}
+
+.ww-kpi-label {
+    color: var(--ww-muted) !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ww-kpi-value {
+    color: var(--ww-green-light) !important;
+    font-size: 29px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.ww-kpi-help {
+    color: var(--ww-muted) !important;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+/* STREAMLIT METRICS */
+
+div[data-testid="stMetric"] {
+    background: var(--ww-panel) !important;
+    border: 1px solid var(--ww-border) !important;
+    border-radius: 12px !important;
+    padding: 17px !important;
+}
+
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] p {
+    color: var(--ww-muted) !important;
+}
+
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricValue"] div {
+    color: var(--ww-green-light) !important;
+}
+
+/* INPUTS */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stTextArea textarea {
+    background: var(--ww-panel) !important;
+    color: var(--ww-text) !important;
+    -webkit-text-fill-color: var(--ww-text) !important;
+    border: 1px solid var(--ww-border) !important;
+    border-radius: 8px !important;
+}
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: var(--ww-muted) !important;
+    -webkit-text-fill-color: var(--ww-muted) !important;
+}
+
+.stSelectbox label,
+.stTextInput label,
+.stNumberInput label,
+.stDateInput label,
+.stTextArea label,
+.stMultiSelect label,
+.stCheckbox label {
+    color: var(--ww-text) !important;
+}
+
+/* DROPDOWNS */
+
+div[data-baseweb="select"] > div {
+    background: var(--ww-panel) !important;
+    border-color: var(--ww-border) !important;
+}
+
+div[data-baseweb="select"] span {
+    color: var(--ww-text) !important;
+}
+
+div[data-baseweb="popover"],
+ul[data-baseweb="menu"] {
+    background: var(--ww-panel) !important;
+}
+
+ul[data-baseweb="menu"] li {
+    color: var(--ww-text) !important;
+}
+
+ul[data-baseweb="menu"] li:hover {
+    background: var(--ww-panel-hover) !important;
+}
+
+/* BUTTONS */
+
+.stButton button,
+.stDownloadButton button,
+[data-testid="stFormSubmitButton"] button {
+    background: var(--ww-green) !important;
+    color: white !important;
+    border: 1px solid var(--ww-green) !important;
+    border-radius: 9px !important;
+    font-weight: 700 !important;
+    min-height: 40px;
+}
+
+.stButton button:hover,
+.stDownloadButton button:hover {
+    background: #11835F !important;
+    color: white !important;
+}
+
+/* TABS */
+
+.stTabs [data-baseweb="tab"] {
+    color: var(--ww-muted) !important;
+}
+
+.stTabs [aria-selected="true"] {
+    color: var(--ww-green-light) !important;
+}
+
+/* FORMS AND EXPANDERS */
+
+[data-testid="stForm"],
+[data-testid="stExpander"] {
+    background: var(--ww-panel) !important;
+    border: 1px solid var(--ww-border) !important;
+    border-radius: 12px !important;
+}
+
+/* TABLES */
+
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    background: var(--ww-panel) !important;
+    border: 1px solid var(--ww-border) !important;
+    border-radius: 10px !important;
+}
+
+/* PLOTLY CHARTS */
+
+[data-testid="stPlotlyChart"] {
+    background: var(--ww-panel) !important;
+    border: 1px solid var(--ww-border);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+/* ALERTS */
+
+[data-testid="stAlert"] {
+    border-radius: 10px !important;
+}
+
+/* DIVIDERS AND FOOTER */
+
+hr {
+    border-color: var(--ww-border) !important;
+}
+
+footer {
+    visibility: hidden;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem;
+    }
+
+    .ww-page-header h1 {
+        font-size: 23px;
+    }
+}
+
+
+
+/* =========================================
+   WASTEWISE AI - DASHBOARD VISUAL UPGRADE
+========================================= */
+
+/* Premium KPI cards */
+.ww-kpi-card {
+    background: linear-gradient(145deg, #1c2d38, #192630) !important;
+    border: 1px solid #344957 !important;
+    border-radius: 15px !important;
+    padding: 22px !important;
+    min-height: 125px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s ease, border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.ww-kpi-card:hover {
+    transform: translateY(-3px);
+    border-color: #35A995 !important;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+}
+
+.ww-kpi-label {
+    font-size: 13px !important;
+    letter-spacing: 0.2px;
+}
+
+.ww-kpi-value {
+    font-size: 31px !important;
+    letter-spacing: -0.6px;
+}
+
+/* Cleaner section hierarchy */
+.ww-section-header {
+    margin-top: 30px !important;
+    margin-bottom: 17px !important;
+}
+
+.ww-section-header h3 {
+    font-size: 21px !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.3px;
+}
+
+.ww-section-description {
+    font-size: 13px !important;
+    line-height: 1.6;
+}
+
+/* Dashboard charts */
+[data-testid="stPlotlyChart"] {
+    border: 1px solid #344957 !important;
+    border-radius: 15px !important;
+    background: linear-gradient(145deg, #1c2d38, #192630) !important;
+    padding: 12px !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    border: 1px solid #344957 !important;
+    border-radius: 13px !important;
+    overflow: hidden;
+}
+
+/* Dashboard alerts */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    padding: 13px 16px !important;
+}
+
+/* Better spacing on smaller screens */
+@media (max-width: 900px) {
+    .ww-kpi-card {
+        padding: 16px !important;
+        min-height: 110px;
+    }
+
+    .ww-kpi-value {
+        font-size: 25px !important;
+    }
+
+    .ww-section-header h3 {
+        font-size: 19px !important;
+    }
+}

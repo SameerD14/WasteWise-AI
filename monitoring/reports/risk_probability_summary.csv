@@ -1,0 +1,9 @@
+metric,value
+Total predictions,2000.0
+Valid risk probabilities,1391.0
+Missing risk probabilities,609.0
+Average risk probability,41.9894033069734
+Median risk probability,29.46
+Minimum risk probability,0.0
+Maximum risk probability,99.64
+Standard deviation,39.578618742777614

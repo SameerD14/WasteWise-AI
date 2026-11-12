@@ -1,0 +1,6 @@
+check,result
+Total prediction records,2000
+Missing batch IDs,0
+Missing risk probabilities,609
+Duplicate batch IDs,0
+Invalid risk probabilities,0

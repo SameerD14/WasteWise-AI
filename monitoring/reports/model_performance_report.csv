@@ -1,0 +1,7 @@
+metric,score,score_percentage,run_name,run_id,metric_source
+accuracy,0.8889,88.89,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation
+precision,0.8851,88.51,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation
+recall,0.939,93.89999999999999,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation
+f1_score,0.9112,91.12,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation
+roc_auc,0.9535,95.35,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation
+pr_auc,0.9672,96.72,Logistic_Regression_Baseline,88f75f628ff5405098450ebfdf84c1a1,Previously recorded test evaluation

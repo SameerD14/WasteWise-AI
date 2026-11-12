@@ -1,0 +1,52 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated datasets
+data/raw/*.csv
+data/processed/*.csv
+data/predictions/*.csv
+
+# MLflow local tracking database and artifacts
+mlflow.db
+mlruns/
+
+# Logs
+logs/
+*.log
+
+# Local backup files
+backups/
+*_backup*.py
+*_before_*.py
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+# CSS backup files
+*_backup*.css
+*_before_*.css

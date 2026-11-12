@@ -1,0 +1,37 @@
+
+# Data Analysis
+numpy
+pandas
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+joblib
+
+# Dashboard
+streamlit
+
+# Database
+sqlalchemy
+pymysql
+
+# Configuration
+python-dotenv
+
+# Jupyter Notebook
+jupyter
+ipykernel
+
+# Experiment Tracking
+mlflow
+
+# Testing
+pytest
+
+# Excel Support
+openpyxl

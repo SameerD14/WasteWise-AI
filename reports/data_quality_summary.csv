@@ -1,0 +1,6 @@
+Dataset,Total Rows,Total Columns,Missing Cells,Duplicate Rows
+Products,10,6,0,0
+Perishable Inventory,1800,12,0,0
+Inventory Batches,2000,16,0,0
+Discount Scenarios,10000,8,0,0
+Calendar,1969,14,7542,0

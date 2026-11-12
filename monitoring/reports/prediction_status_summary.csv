@@ -1,0 +1,5 @@
+risk_status,batch_count,percentage
+Low Risk,788,39.4
+High Risk,603,30.15
+Expired,409,20.45
+Expires Today - Immediate Review,200,10.0
